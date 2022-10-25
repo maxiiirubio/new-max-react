@@ -1,18 +1,18 @@
 const NavBar = () => {
     return (
     <header>    
-        <nav>
-            <h1>NEW MAX</h1>
-            <div>
+        <nav className="header">
+            <h1 id="logo">NEW <span id="logoSpan">MAX</span></h1>
+            <div className="barra">
               <ul>
                 <li>
-                  <a href="index.html">INICIO</a>
+                  <a href="" id="barra-estilo">INICIO</a>
                 </li>
                 <li>
-                  <a href="pages/productos.html">PRODUCTOS</a>
+                  <a href="" id="barra-estilo">PRODUCTOS</a>
                 </li>
                 <li>
-                  <a href="pages/info.html">¿QUIÉNES SOMOS?</a>
+                  <a href="" id="barra-estilo">¿QUIÉNES SOMOS?</a>
                 </li>
               </ul>
             </div>
