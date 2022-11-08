@@ -15,35 +15,32 @@ $color5: rgb(78, 77, 77);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    #logo{
+    .logo{
         color: $color2;
-        font-size: 30px;
+        font-size: 22px;
         margin-left: 50px;
         font-weight: 900;
         font-family: 'Tapestry', cursive;
+        text-decoration: none;
 
         #logoSpan{
             color: $color3;
         }
     }
     .barra{
-        ul{
           display: flex;
-            li{
-              margin: 0 20px;
-              list-style: none;
-                #barra-estilo{
+          list-style: none;
+              .barraEstilo{
                   text-decoration: none;
-                    color: $color2;
-                    font-size: 22px;
-                    font-weight: 900;
-                    font-family: 'Tapestry', cursive;
-                    &:hover{
-                        color: $color3;
-                        font-size: 22px;
-                    }
-                }
-            }
-        }
+                  color: $color2;
+                  margin: 0 20px;
+                  font-size: 22px;
+                  font-weight: 900;
+                  font-family: 'Tapestry', cursive;
+                  &:hover{
+                      color: $color3;
+                      font-size: 22px;
+                  }
+              }
     }
 }

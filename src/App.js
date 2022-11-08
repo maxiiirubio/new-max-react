@@ -1,9 +1,20 @@
 import './App.scss';
-import NavBar from './components/NavBar' 
+import { BrowserRouter, Routes, Route } from 'react-router-dom'; 
+import { Home } from './pages/Home';
+import { Marca } from './components/Marca';
+import { VerProdu } from './pages/VerProdu';
 
-function App() {
+const App = () => {
   return (
-    <NavBar/>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path={"/"} element={<Home/>}/>
+          <Route path={"/marca/:marcas"} element={<Marca/>}/>
+          <Route path={"/producto/:producto"} element={<VerProdu/>}/>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
