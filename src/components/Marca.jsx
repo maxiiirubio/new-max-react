@@ -5,7 +5,6 @@ export const Marca = () => {
 
     return(
         <>
-        <NavBar/>
         <ItemListConteiner/>
         </>
     )

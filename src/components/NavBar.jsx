@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, Outlet} from "react-router-dom"
 
 const links = [
   {to: "/marca/Choice", label: "TABACO CHOICE"},
@@ -9,6 +9,7 @@ const links = [
 
 const NavBar = () => {
     return (
+    <>
     <header>    
         <nav className="header">
             <Link to="/" className="logo"><h1>NEW <span id="logoSpan">MAX</span></h1></Link>
@@ -23,6 +24,8 @@ const NavBar = () => {
             </div>
         </nav>
     </header>
+    <Outlet/>
+    </>
 )}
 
 export default NavBar

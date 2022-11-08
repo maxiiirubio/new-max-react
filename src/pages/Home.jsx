@@ -18,7 +18,6 @@ export const Home = () => {
 
     return(
         <>
-            <NavBar/>
             <main>
             <ItemListConteiner
                 products= {products}

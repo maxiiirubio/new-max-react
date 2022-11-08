@@ -15,8 +15,7 @@ export const VerProdu = () => {
     },[producto]);
 
     return(
-        <>
-           <NavBar/> 
+        <> 
            <div>
             <img src={product.img} alt="tabaco" width={200} height={200} />
             <h1>Nombre: {product.nombre}</h1>
