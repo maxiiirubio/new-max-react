@@ -1,11 +1,10 @@
-import NavBar from "../components/NavBar"
 import ItemListConteiner from "../components/ItemListConteiner"
 import { getProducts } from "../api/products";
 import { useEffect, useState } from 'react';
 
 export const Home = () => {
 
-    const [products, setProducts] = useState([]);
+/*     const [products, setProducts] = useState([]);
 
     useEffect(() => {
       setProducts([]);
@@ -14,14 +13,12 @@ export const Home = () => {
           setProducts(items);
         })
         .catch((e) => console.log(e));
-    }, []);
+    }, []); */
 
     return(
         <>
             <main>
-            <ItemListConteiner
-                products= {products}
-            />
+            <ItemListConteiner/>
             </main>
         </>
     )

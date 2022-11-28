@@ -4,7 +4,7 @@ import { getProducts } from "../api/products";
 import { useState } from "react";
 import { useEffect } from "react";
 
-const ItemListConteiner = ({products}) => {
+const ItemListConteiner = ({}) => {
     const {marcas} = useParams();
     const [productos, setProducts] = useState([]);
 

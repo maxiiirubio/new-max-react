@@ -1,4 +1,6 @@
 import { Link, Outlet} from "react-router-dom"
+import { FaShoppingCart } from 'react-icons/fa';
+import { useCartContext } from "../context/CartContext";
 
 const links = [
   {to: "/marca/Choice", label: "TABACO CHOICE"},
@@ -8,6 +10,8 @@ const links = [
 
 
 const NavBar = () => {
+  const { getCartCant } = useCartContext();
+
     return (
     <>
     <header>    
@@ -21,6 +25,12 @@ const NavBar = () => {
                   </Link>
                 )
               })}
+            </div>
+            <div>
+              <Link to="/cart" style={{color:"white", textDecoration:"none"}}>
+              <FaShoppingCart/>
+              <span> {getCartCant()} </span>
+              </Link>
             </div>
         </nav>
     </header>
