@@ -4,17 +4,6 @@ import { useEffect, useState } from 'react';
 
 export const Home = () => {
 
-/*     const [products, setProducts] = useState([]);
-
-    useEffect(() => {
-      setProducts([]);
-      getProducts()
-        .then((items) => {
-          setProducts(items);
-        })
-        .catch((e) => console.log(e));
-    }, []); */
-
     return(
         <>
             <main>

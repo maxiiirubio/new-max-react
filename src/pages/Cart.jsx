@@ -5,8 +5,6 @@ import { useCartContext } from "../context/CartContext";
 export const Cart = () => {
   const navigate = useNavigate()
 
-  //PROX CLASE
-
   const {cart, getTotal, removeProduct} = useCartContext();
 
 
